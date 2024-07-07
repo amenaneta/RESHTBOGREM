@@ -8,7 +8,9 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
 }
-
+img{
+     margin-top: 50%;
+}
 header {
     width: 100%;
     background-color: #333;
