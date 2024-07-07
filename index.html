@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>רשת בוגרים</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="page1.html">ליווי אקדימי</a></li>
+                <li><a href="page2.html">עזרה לסטודנטים</a></li>
+                <li><a href="page3.html">חשיפה ל HIGH TECH</a></li>
+                <li><a href="page4.html">התנדבות</a></li>
+                <li><a href="page5.html">אירועים מיוחדים</a></li>
+                <li><a href="page6.html">האקתון</a></li>
+                <li><a href="page7.html">טיולים</a></li>
+                <li><a href="page8.html">סדנאות העשרה /קורסים</a></li>
+                <li><a href="page9.html">קידום קריירה</a></li>
+                <li><a href="page10.html">קמפוס קיץ</a></li>
+                <li><img src="img/logo.jpg" alt="Logo" class="nav-logo"></li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="spin-wheel" class="wheel-section">
+            <div class="wheel" id="wheel">
+                <div class="segment" data-link="page1.html" style="--i: 0; transform: rotate(360deg); background-color: rgba(79, 179, 49, 0.7);">ליווי אקדימי</div>
+                <div class="segment" data-link="page2.html" style="--i: 1; transform: rotate(36deg); background-color: rgba(255, 204, 0, 0.7);">עזרה<br> לסטודנטים</div>
+                <div class="segment" data-link="page3.html" style="--i: 2; transform: rotate(72deg); background-color: rgba(22, 188, 244, 0.7);">חשיפה ל<br> HIGH TECH</div>
+                <div class="segment" data-link="page4.html" style="--i: 3; transform: rotate(108deg); background-color: rgba(185, 44, 171, 0.7);">התנדבות</div>
+                <div class="segment" data-link="page5.html" style="--i: 4; transform: rotate(144deg); background-color: rgba(45, 183, 170, 0.7);">אירועים מיוחדים</div>
+                <div class="segment" data-link="page6.html" style="--i: 5; transform: rotate(180deg); background-color: rgba(239, 71, 111, 0.7);">האקתון</div>
+                <div class="segment" data-link="page7.html" style="--i: 6; transform: rotate(216deg); background-color: rgba(255, 125, 0, 0.7);">טיולים</div>
+                <div class="segment" data-link="page8.html" style="--i: 7; transform: rotate(252deg); background-color: rgba(170, 170, 170, 0.7);">סדנאות העשרה<br>/קורסים</div>
+                <div class="segment" data-link="page9.html" style="--i: 8; transform: rotate(288deg); background-color: rgba(117, 50, 176, 0.7);">קידום קריירה</div>
+                <div class="segment" data-link="page10.html" style="--i: 9; transform: rotate(324deg); background-color: rgba(255, 87, 34, 0.7);">קמפוס קיץ</div>
+                <button id="spin">Spin</button>
+            </div>
+            <div id="result" class="result"></div>
+            <ul id="results-list"></ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© רשת בוגרים. </p>
+    </footer>
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
